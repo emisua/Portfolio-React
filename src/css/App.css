@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  justify-content: center;
+}

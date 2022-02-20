@@ -1,0 +1,57 @@
+[
+  {
+    "nombre": "Sensei Multimedia",
+    "slug": "sensei",
+    "img": {
+      "logo": "logo.jpg",
+      "poster": "src/img/sensei/poster.jpg"
+    },
+    "color": "red",
+    "id": 1,
+    "url": "https://",
+    "tags": ["Wordpress"],
+    "desc": [
+      "Contrary to popular belief, Lorem Ipsum is not simply random text.",
+      "parrafo 2"
+    ]
+  },
+  {
+    "nombre": "Fotografía Infantil Salamanca",
+    "slug": "sensei-infantil",
+    "img": {
+      "logo": "logo.jpg",
+      "poster": "src/img/sensei-infantil/poster.jpg"
+    },
+    "color": "red",
+    "id": 2,
+    "url": "https://",
+    "tags": ["Wordpress", "Kadence"],
+    "desc": ["parrafo 1", "parrafo 2"]
+  },
+  {
+    "nombre": "Lamode Biopic",
+    "slug": "lamode",
+    "img": {
+      "logo": "logo.jpg",
+      "poster": "src/img/lamode/poster.jpg"
+    },
+    "color": "red",
+    "id": 3,
+    "url": "https://",
+    "tags": ["Wordpress"],
+    "desc": ["parrafo 1", "parrafo 2"]
+  },
+  {
+    "nombre": "Titiriscopio",
+    "slug": "titiriscopio",
+    "img": {
+      "logo": "logo.jpg",
+      "poster": "src/img/titiriscopio/poster.jpg"
+    },
+    "color": "orange",
+    "id": 4,
+    "url": "https://",
+    "tags": ["Wordpress"],
+    "desc": ["parrafo 1", "parrafo 2"]
+  }
+]

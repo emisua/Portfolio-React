@@ -1,0 +1,13 @@
+h3.title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+h3.title::before {
+  contain: "";
+  background-color: red;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+}

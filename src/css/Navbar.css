@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar ul {
+  transition: all 0.4s ease-in-out;
+  list-style: none;
+}
+
+.navbar.mobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  margin: 0;
+  width: 40%;
+  position: fixed;
+  top: 100%;
+  right: 4rem;
+  z-index: 9;
+  border-radius: 1rem;
+  opacity: 0;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.navbar.mobile.menuopen ul {
+  opacity: 1;
+  bottom: 10rem;
+  top: auto;
+}
+
+.navbar.mobile ul a {
+  background-color: transparent;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar.mobile .logo {
+  height: 100%;
+}
+
+.navbar.mobile button {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  z-index: 100;
+}
+
+.navbar.mobile button img {
+  height: 2rem;
+}
+
+/* Estilos para PC */
+
+.navbar.pc {
+  height: 80px;
+}
+.navbar.pc ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  position: relative;
+  min-height: auto;
+  width: auto;
+  margin-left: auto;
+  top: 0;
+}
+
+.navbar.pc ul a {
+  background-color: antiquewhite;
+  width: auto;
+  padding: 0.5rem;
+  text-align: center;
+  color: black;
+}
+
+.navbar.pc .nav-button {
+  display: none;
+}
