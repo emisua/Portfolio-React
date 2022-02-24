@@ -53,8 +53,30 @@
   text-align: center;
 }
 
-.navbar .logo {
-  height: 100%;
+.navbar .logo-zone {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo-zone .texto {
+  display: flex;
+  flex-direction: column;
+  font-family: "Fira Code", monospace;
+}
+
+.navbar .logo-zone .texto .name {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.navbar .logo-zone .texto .desc {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.navbar .logo-zone .logo {
+  height: 2.4rem;
+  margin-right: 1rem;
 }
 
 .navbar button {
@@ -83,6 +105,7 @@
   display: flex;
   gap: 1rem;
   flex-direction: row;
+  justify-content: space-between;
   position: relative;
   min-height: auto;
   width: auto;
@@ -90,6 +113,8 @@
   top: 0;
   box-shadow: none;
   backdrop-filter: none;
+  background-color: transparent;
+  right: inherit;
 }
 
 .desktop .navbar ul a {
