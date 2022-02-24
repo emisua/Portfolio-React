@@ -1,0 +1,14 @@
+.btn {
+  background-color: beige;
+  padding: 0.4rem 0.8rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.btn.lg {
+  font-size: 1.3rem;
+}
+
+.btn.xs {
+  font-size: 0.75rem;
+}

@@ -1,7 +1,7 @@
 import "../src/css/Colores.css";
 import "../src/css/App.css";
 import Navbar from "../componentes/Navbar";
-import Header from "../componentes/Header";
+import Home from "../componentes/Home";
 import Proyectos from "../componentes/Proyectos";
 import SobreMi from "../componentes/SobreMi";
 import Contacto from "../componentes/Contacto";
@@ -31,7 +31,7 @@ function App() {
       }
     >
       <Navbar isMobile={isMobile} />
-      <Header />
+      <Home />
       <SobreMi />
       <Proyectos />
       <Contacto />

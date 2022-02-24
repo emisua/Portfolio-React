@@ -23,3 +23,33 @@ a {
   min-height: 70vh;
   justify-content: center;
 }
+
+/* FUENTES */
+
+.code {
+  font-family: "Fira Code", monospace;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+/* GRID */
+
+.p1 {
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+/* STYLE */
+
+.featured {
+  color: rgb(255, 123, 0);
+}

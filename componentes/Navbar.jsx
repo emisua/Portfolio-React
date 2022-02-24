@@ -15,10 +15,16 @@ const Navbar = (props) => {
               "navbar dropdown open"
             : // Es móvil con dropdown cerrado
               "navbar dropdown closed"
-          : "navbar"
+          : "navbar container"
       }
     >
-      <img src="../src/img/logo.svg" alt="" className="logo" />
+      <div className="logo-zone">
+        <img src="../src/img/logo.svg" alt="" className="logo" />
+        <div className="texto code">
+          <span className="name">Emilio Suárez</span>
+          <span className="desc">Frontend developer</span>
+        </div>
+      </div>
       <ul>
         <a>
           <li>Sobre mí</li>
