@@ -5,15 +5,16 @@ import Header from "../componentes/Header";
 import Proyectos from "../componentes/Proyectos";
 import SobreMi from "../componentes/SobreMi";
 import Contacto from "../componentes/Contacto";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 function App() {
+  // Comprobar dispositivo
   const [width, setWidth] = useState(window.innerWidth);
-
-  function comprobarAnchoVentana() {
+  const comprobarAnchoVentana = useCallback((event) => {
     setWidth(window.innerWidth);
-  }
+  }, []);
   useEffect(() => {
+    //Cada vez que la ventana cambia de tamaño, le aplica el nuevo ancho a width.
     window.addEventListener("resize", comprobarAnchoVentana);
     return () => {
       window.removeEventListener("resize", comprobarAnchoVentana);
@@ -22,10 +23,14 @@ function App() {
 
   // Establecer ancho para pantallas mobile
   const isMobile = width <= 650;
-
   return (
-    <main className={isMobile ? "Portfolio mobile" : "Portfolio"}>
-      <Navbar />
+    <main
+      className={
+        //Si es mobile le añade su clase y si no, no
+        isMobile ? "portfolio" : "portfolio desktop"
+      }
+    >
+      <Navbar isMobile={isMobile} />
       <Header />
       <SobreMi />
       <Proyectos />
