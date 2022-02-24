@@ -1,22 +1,7 @@
 import "../src/css/Navbar.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-const Navbar = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  function comprobarAnchoVentana() {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-    window.addEventListener("resize", comprobarAnchoVentana);
-    return () => {
-      window.removeEventListener("resize", comprobarAnchoVentana);
-    };
-  }, []);
-
-  // Establecer ancho para pantallas mobile
-  const isMobile = width <= 650;
-
+const Navbar = (props) => {
   const [dropdown, setDropdown] = useState(false);
   // Si esta abierto se cierra o viceversa, como un toggle.
   const cambiarDropdown = () => setDropdown(!dropdown);
@@ -24,14 +9,13 @@ const Navbar = () => {
   return (
     <nav
       className={
-        isMobile
+        props.isMobile
           ? dropdown
-            ? // Es movil con dropdown abierto
-              "navbar mobile menuopen"
-            : // Es movil con dropdown cerrado
-              "navbar mobile menuclosed"
-          : // Es pc
-            "navbar pc container"
+            ? // Es móvil con dropdown abierto
+              "navbar dropdown open"
+            : // Es móvil con dropdown cerrado
+              "navbar dropdown closed"
+          : "navbar"
       }
     >
       <img src="../src/img/logo.svg" alt="" className="logo" />
@@ -50,10 +34,7 @@ const Navbar = () => {
         </a>
       </ul>
       <button onClick={cambiarDropdown} className="nav-button">
-        <img
-          src={!dropdown ? "../src/img/menu.svg" : "../src/img/close.svg"}
-          alt=""
-        />
+        <img src={!dropdown ? "../src/img/menu.svg" : "../src/img/close.svg"} />
       </button>
     </nav>
   );
