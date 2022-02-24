@@ -13,11 +13,6 @@
 }
 
 .navbar ul {
-  transition: all 0.4s ease-in-out;
-  list-style: none;
-}
-
-.navbar.mobile ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,29 +27,37 @@
   right: 4rem;
   z-index: 9;
   border-radius: 1rem;
-  opacity: 0;
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  list-style: none;
 }
 
-.navbar.mobile.menuopen ul {
+.navbar.dropdown.open ul {
   opacity: 1;
+  bottom: 10rem;
+  top: auto;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar.dropdown.closed ul {
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
   bottom: 10rem;
   top: auto;
 }
 
-.navbar.mobile ul a {
+.navbar ul a {
   background-color: transparent;
   width: 100%;
   padding: 1rem;
   text-align: center;
 }
 
-.navbar.mobile .logo {
+.navbar .logo {
   height: 100%;
 }
 
-.navbar.mobile button {
+.navbar button {
   border: 0;
   background-color: transparent;
   padding: 0;
@@ -66,16 +69,16 @@
   z-index: 100;
 }
 
-.navbar.mobile button img {
+.navbar button img {
   height: 2rem;
 }
 
 /* Estilos para PC */
 
-.navbar.pc {
+.desktop .navbar {
   height: 80px;
 }
-.navbar.pc ul {
+.desktop .navbar ul {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -85,9 +88,11 @@
   width: auto;
   margin-left: auto;
   top: 0;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
-.navbar.pc ul a {
+.desktop .navbar ul a {
   background-color: antiquewhite;
   width: auto;
   padding: 0.5rem;
@@ -95,6 +100,6 @@
   color: black;
 }
 
-.navbar.pc .nav-button {
+.desktop .navbar .nav-button {
   display: none;
 }
