@@ -4,7 +4,9 @@ const SobreMi = () => {
   return (
     <div className="bloque">
       <div className="sobremi container">
-        <Title title="Sobre mí"></Title>
+        <Title size="3" title="Sobre mí">
+          Hola
+        </Title>
         <p>
           De pequeño me gustaba mucho dibujar y sacaba buenas notas en ello.
           Hice el Bachiller de artes por ese motivo con la idea de comenzar
