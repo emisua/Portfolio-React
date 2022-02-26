@@ -10,8 +10,14 @@ a {
   cursor: pointer;
 }
 
+p {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .container {
-  max-width: 60rem;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 0 1rem;
   width: 100%;
@@ -30,8 +36,33 @@ a {
   font-family: "Fira Code", monospace;
 }
 
+.bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
 .strong {
   font-weight: bold;
+}
+
+.display {
+  font-size: clamp(5rem, 10vw, 7rem);
+  margin: 0;
+  line-height: clamp(5rem, 10vw, 6.4rem);
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  border-bottom: 0.25rem solid;
+  width: 108%;
+  position: absolute;
+  bottom: 4px;
+  border-radius: 5px;
+  left: -4%;
+  filter: contrast(1.2);
 }
 
 /* GRID */

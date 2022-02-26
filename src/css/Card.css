@@ -85,30 +85,25 @@
   font-size: 0.6rem;
   margin-right: 0.3rem;
   backdrop-filter: blur(3px);
-  transition: all 0.1s ease-in-out;
-}
-
-.card:hover .tag {
-  transform: translate(0px, -3px);
-  transition-delay: 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .card:hover .tag.kadence {
-  background-color: var(--tag-kadence);
+  background-color: var(--primary);
 }
 
 .card:hover .tag.wordpress {
-  background-color: var(--tag-wordpress);
+  background-color: var(--secondary);
 }
 
 .tag.kadence {
   background-color: transparent;
-  border: 1px solid var(--tag-kadence);
+  border: 1px solid var(--primary);
 }
 
 .tag.wordpress {
   background-color: transparent;
-  border: 1px solid var(--tag-wordpress);
+  border: 1px solid var(--secondary);
 }
 
 @media (min-width: 650px) {

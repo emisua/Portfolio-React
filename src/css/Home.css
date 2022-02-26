@@ -4,19 +4,81 @@
 
 .home {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   min-height: calc(100vh - 4rem);
 }
 
 .home .img-portada {
-  max-width: 100%;
+  /* max-width: 100%;
   margin-top: auto;
+  max-height: calc(100vh - 4rem);
+  flex: 1;
+  height: auto;
+  object-fit: contain;
+  object-position: 0% 100%;
+  width: 100%; */
+  position: absolute;
+  max-height: calc(100vh - 4rem);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: contain;
+  object-position: 0% 100%;
+  width: 100%;
+}
+
+.home .grid.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
 }
 
 .home .texto {
   order: 1;
+}
+
+.home .texto .title {
+  line-height: inherit;
+  margin-bottom: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  font-weight: normal;
+  position: relative;
+}
+
+.home .bg {
+  position: absolute;
+  right: 0;
+  top: 50vh;
+  width: 50vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* PC */
+
+.desktop .home {
+  display: flex;
+  flex-direction: row;
+  max-height: 100vh;
+  justify-content: center;
+}
+
+.desktop .img-portada {
+  max-width: 60vw;
+}
+
+.desktop .grid.container {
+  grid-template-columns: 2fr 2fr;
+}
+
+.desktop .home .texto {
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(2px);
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: flex-start;
 }
