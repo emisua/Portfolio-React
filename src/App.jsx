@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   // Establecer ancho para pantallas mobile
-  const isMobile = width <= 650;
+  const isMobile = width <= 767;
   return (
     <main
       className={
