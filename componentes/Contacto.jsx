@@ -4,7 +4,7 @@ const Contacto = () => {
   return (
     <footer className="contacto bloque">
       <div className="container">
-        <Title title="Contacto"></Title>
+        <Title size="3" title="Contacto"></Title>
         <p>Esto es el contacto</p>
       </div>
     </footer>
