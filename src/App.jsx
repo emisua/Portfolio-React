@@ -1,10 +1,10 @@
 import "../src/css/Colores.css";
 import "../src/css/App.css";
 import Navbar from "../componentes/Navbar";
-import Home from "../componentes/Home";
-import Proyectos from "../componentes/Proyectos";
-import SobreMi from "../componentes/SobreMi";
-import Contacto from "../componentes/Contacto";
+import Home from "../componentes/PaginaHome";
+import Proyectos from "../componentes/PaginaProyectos";
+import SobreMi from "../componentes/PaginaSobreMi";
+import Contacto from "../componentes/PaginaContacto";
 import { useState, useEffect, useCallback } from "react";
 
 function App() {
