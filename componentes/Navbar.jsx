@@ -18,17 +18,14 @@ const Navbar = (props) => {
           : "navbar container"
       }
     >
-      <div className="logo-zone">
+      <a className="logo-zone" href="/">
         <img src="../src/img/logo.svg" alt="" className="logo" />
         <div className="texto code">
           <span className="name">Emilio Suárez</span>
           <span className="desc">Frontend developer</span>
         </div>
-      </div>
+      </a>
       <ul>
-        <a>
-          <li>Sobre mí</li>
-        </a>
         <a>
           <li>Proyectos</li>
         </a>
