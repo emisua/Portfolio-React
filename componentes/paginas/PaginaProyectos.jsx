@@ -1,12 +1,12 @@
-import Cards from "./Cards";
-import "../src/css/Proyectos.css";
-import Title from "./Title";
+import Cards from "../Cards";
+import Title from "../Title";
+import "../../src/css/Proyectos.css";
 
 const Proyectos = () => {
   return (
     <section className="proyectos bloque">
       <div className="container">
-        <Title title="Proyectos"></Title>
+        <Title size="3" title="Proyectos"></Title>
       </div>
       <div className="container">
         <div className="card-block">
