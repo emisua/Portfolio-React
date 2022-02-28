@@ -1,13 +1,24 @@
 import proyectos from "../src/proyectos.json";
+import { useEffect, useState } from "react";
 import "../src/css/Card.css";
 
 const Cards = () => {
-  //Si hubiera que filtrar por categoría se aplica filtrar"categoria" y se cambia proyectos por la constante en el map. Se podría hacer mediante setState y que el state sea el valor a filtrar, "all", "kadence", "wordpress"... etc
-  const filtrarKadence = proyectos.filter((proyecto) =>
-    proyecto.tags.includes("Kadence")
-  );
+  const categorias = {
+    // nombre: estado que va a cambiar al filtrar
+    kadence: proyecto.tags.includes("Kadence"),
+    wordpress: proyecto.tags.includes("Wordpress"),
+    all: proyecto,
+  };
+  const [categoriaActiva, setCategoriaActiva] = useState(categorias.kadence);
 
-  return proyectos.map((proyecto, index) => (
+  useEffect(() => {
+    setCategoriaActiva(categorias.kadence);
+  });
+
+  //Si hubiera que filtrar por categoría se aplica filtrar"categoria" y se cambia proyectos por la constante en el map. Se podría hacer mediante setState y que el state sea el valor a filtrar, "all", "kadence", "wordpress"... etc
+  const filtrar = proyectos.filter((proyecto) => categorias.categoriaActiva);
+
+  return filtrar.map((proyecto, index) => (
     <div className="card" key={index}>
       <a href={proyecto.url}>
         <div className="img">

@@ -58,6 +58,10 @@
   align-items: center;
 }
 
+.navbar .logo-zone:hover .name {
+  color: var(--primary);
+}
+
 .navbar .logo-zone .texto {
   display: flex;
   flex-direction: column;
@@ -67,6 +71,7 @@
 .navbar .logo-zone .texto .name {
   font-weight: 800;
   font-size: 1.3rem;
+  transition: all 0.2s ease;
 }
 
 .navbar .logo-zone .texto .desc {
