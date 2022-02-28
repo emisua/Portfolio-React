@@ -1,10 +1,10 @@
-import Title from "../Title";
+import Title from '../Title'
 
 const SobreMi = () => {
   return (
-    <div className="bloque">
-      <div className="sobremi container">
-        <Title size="3" title="Sobre mí">
+    <div className='bloque'>
+      <div className='sobremi container'>
+        <Title size='3' title='Sobre mí'>
           Hola
         </Title>
         <p>
@@ -18,7 +18,7 @@ const SobreMi = () => {
         <p>Hoy en día lo que me apasiona</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SobreMi;
+export default SobreMi

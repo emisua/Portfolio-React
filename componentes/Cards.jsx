@@ -1,49 +1,44 @@
-import proyectos from "../src/proyectos.json";
-import { useEffect, useState } from "react";
-import "../src/css/Card.css";
+import proyectos from '../src/proyectos.json'
+import { useEffect, useState } from 'react'
+import '../src/css/Card.css'
 
 const Cards = () => {
   const categorias = {
     // nombre: estado que va a cambiar al filtrar
-    kadence: proyecto.tags.includes("Kadence"),
-    wordpress: proyecto.tags.includes("Wordpress"),
-    all: proyecto,
-  };
-  const [categoriaActiva, setCategoriaActiva] = useState(categorias.kadence);
+    kadence: 'Kadence',
+    wordpress: 'Wordpress',
+    all: 'Kadence' && 'Wordpress'
+  }
+  const [categoriaActiva, setCategoriaActiva] = useState(categorias.all)
 
   useEffect(() => {
-    setCategoriaActiva(categorias.kadence);
-  });
+    setCategoriaActiva(categorias.all)
+  }, [])
 
-  //Si hubiera que filtrar por categoría se aplica filtrar"categoria" y se cambia proyectos por la constante en el map. Se podría hacer mediante setState y que el state sea el valor a filtrar, "all", "kadence", "wordpress"... etc
-  const filtrar = proyectos.filter((proyecto) => categorias.categoriaActiva);
+  const filtrar = proyectos.filter((proyecto) =>
+    proyecto.tags.includes(categoriaActiva)
+  )
 
   return filtrar.map((proyecto, index) => (
-    <div className="card" key={index}>
+    <div className='card' key={index}>
       <a href={proyecto.url}>
-        <div className="img">
-          <img src={proyecto.img.poster} alt="" />
+        <div className='img'>
+          <img src={proyecto.img.poster} alt='' />
         </div>
-        <div className="content">
-          <div className="tags">
+        <div className='content'>
+          <div className='tags'>
             {proyecto.tags.map((tag, index) => (
               <span key={index} className={`tag ${tag.toLowerCase()}`}>
                 {tag}
               </span>
             ))}
           </div>
-          <h4 className="title">{proyecto.nombre}</h4>
-          <div className="desc">{proyecto.desc[0]}</div>
+          <h4 className='title'>{proyecto.nombre}</h4>
+          <div className='desc'>{proyecto.desc[0]}</div>
         </div>
       </a>
     </div>
-  ));
-};
-
-export default Cards;
-
-{
-  proyectos.filter((proyecto) => {
-    proyecto.tags.includes("Kadence");
-  });
+  ))
 }
+
+export default Cards

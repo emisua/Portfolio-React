@@ -3,7 +3,7 @@ const Text = ({ children, className, color }) => {
     <p className={className} style={{ color: `${color}` }}>
       {children}
     </p>
-  );
-};
+  )
+}
 
-export default Text;
+export default Text
