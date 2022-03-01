@@ -1,5 +1,6 @@
 import '../src/css/Navbar.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
   const [dropdown, setDropdown] = useState(false)
@@ -24,15 +25,15 @@ const Navbar = (props) => {
         </div>
       </a>
       <ul>
-        <a>
+        <Link to='/sobre-mi'>
+          <li>Sobre mí</li>
+        </Link>
+        <Link to='/proyectos'>
           <li>Proyectos</li>
-        </a>
-        <a>
-          <li>Trabajos</li>
-        </a>
-        <a>
+        </Link>
+        <Link to='/contacto'>
           <li>Contacta</li>
-        </a>
+        </Link>
       </ul>
       <button onClick={cambiarDropdown} className='nav-button'>
         <img src={!dropdown ? '../src/img/menu.svg' : '../src/img/close.svg'} />
