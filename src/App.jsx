@@ -6,6 +6,7 @@ import Proyectos from '../componentes/paginas/PaginaProyectos'
 import SobreMi from '../componentes/paginas/PaginaSobreMi'
 import Contacto from '../componentes/paginas/PaginaContacto'
 import { useState, useEffect, useCallback } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
 function App () {
   // Comprobar dispositivo
@@ -23,18 +24,25 @@ function App () {
 
   // Establecer ancho para pantallas mobile
   const isMobile = width <= 767
+
+  // Renderizamos la web
+
   return (
     <main
       className={
         // Si es mobile le añade su clase y si no, no
-        isMobile ? 'portfolio' : 'portfolio desktop'
+        isMobile
+          ? 'portfolio'
+          : 'portfolio desktop'
       }
     >
       <Navbar isMobile={isMobile} />
-      <Home />
-      <SobreMi />
-      <Proyectos />
-      <Contacto />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/sobre-mi' element={<SobreMi />} />
+        <Route path='/proyectos' element={<Proyectos />} />
+        <Route path='/contacto' element={<Contacto />} />
+      </Routes>
     </main>
   )
 }
