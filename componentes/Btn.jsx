@@ -1,10 +1,11 @@
 import '../src/css/Btn.css'
+import { Link } from 'react-router-dom'
 
-const Btn = ({ children, url, size, className }) => {
+const Btn = ({ children, url, size, className, to }) => {
   return (
-    <a className={`btn ${className}`} href={url}>
+    <Link className={`btn ${className}`} href={url} to={to}>
       {children}
-    </a>
+    </Link>
   )
 }
 
