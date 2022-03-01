@@ -1,17 +1,44 @@
 :root {
-  --tag-wordpress: rgba(255, 86, 190, 0.8);
-  --tag-kadence: rgba(255, 145, 0, 0.8);
-  --primary: #ff9a62;
-  --primary-light: #ffbe96;
-  --secondary: #8faab5;
-  --secondary-light: #d0dbdf;
-  --text-dark: #333333;
+  --tag-wordpress: hsla(323, 100%, 67%, 0.8);
+  --tag-kadence: hsla(34, 100%, 50%, 0.8);
+  --primary: hsl(21, 100%, 69%);
+  --primary-dark: hsl(21, 100%, 40%);
+  --primary-darker: hsl(21, 100%, 20%);
+  --primary-light: hsl(23, 100%, 79%);
+  --primary-light-80: hsla(23, 100%, 79%, 0.8);
+  --primary-light-90: hsla(23, 100%, 79%, 0.9);
+  --secondary: hsl(197, 20%, 64%);
+  --secondary-dark: hsl(197, 20%, 40%);
+  --secondary-darker: hsl(197, 20%, 20%);
+  --secondary-light: hsl(196, 19%, 85%);
+  --secondary-light-80: hsl(196, 19%, 85%, 0.8);
+  --secondary-light-90: hsl(196, 19%, 85%, 0.9);
+  --white-10: hsla(0, 0%, 100%, 0.5);
+  --text-dark: hsl(197deg 20% 30%);
 }
 
 .color-primary {
   color: var(--primary);
 }
+.color-primary-light {
+  color: var(--primary-light);
+}
+.color-primary-dark {
+  color: var(--primary-dark);
+}
+.color-primary-darker {
+  color: var(--primary-darker);
+}
 
 .color-secondary {
   color: var(--secondary);
+}
+.color-secondary-light {
+  color: var(--secondary-light);
+}
+.color-secondary-dark {
+  color: var(--secondary-dark);
+}
+.color-secondary-darker {
+  color: var(--secondary-darker);
 }
