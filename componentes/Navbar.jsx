@@ -1,16 +1,39 @@
 import '../src/css/Navbar.css'
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useRef, useEffect } from 'react'
+import Btn from './Btn'
 
-const Navbar = (props) => {
+const Navbar = ({ isMobile }) => {
   const [dropdown, setDropdown] = useState(false)
   // Si esta abierto se cierra o viceversa, como un toggle.
   const cambiarDropdown = () => setDropdown(!dropdown)
+  const ref = useRef()
+
+  useEffect(() => {
+    const checkIfClickedOutside = e => {
+      // If the menu is open and the clicked target is not within the menu,
+      // then close the menu
+      if (dropdown && ref.current && !ref.current.contains(e.target)) {
+        setDropdown(false)
+      }
+    }
+    document.addEventListener('mousedown', checkIfClickedOutside)
+    return () => {
+    // Cleanup the event listener
+      document.removeEventListener('mousedown', checkIfClickedOutside)
+    }
+  }, [dropdown])
+
+  // Objeto con todos los enlaces del menú
+  const menuItems = {
+    'Sobre mí': '/sobre-mi',
+    Proyectos: '/proyectos',
+    Contacto: '/contacto'
+  }
 
   return (
     <nav
       className={
-        props.isMobile
+        isMobile
           ? dropdown
               ? 'navbar dropdown open' // Es móvil con dropdown abierto
               : 'navbar dropdown closed' // Es móvil con dropdown cerrado
@@ -24,18 +47,32 @@ const Navbar = (props) => {
           <span className='desc'>Frontend developer</span>
         </div>
       </a>
-      <ul>
-        <Link to='/sobre-mi'>
-          <li>Sobre mí</li>
-        </Link>
-        <Link to='/proyectos'>
-          <li>Proyectos</li>
-        </Link>
-        <Link to='/contacto'>
-          <li>Contacta</li>
-        </Link>
+      <ul ref={ref}>
+        {
+          // Convierte el objeto "menuItems" en un array para hacer el map. Le pasa la Key y el Value de la key por props. La Key es menuLabel y el value es menuLabelUrl.
+          Object.entries(menuItems).map(([menuLabel, menuLabelUrl], i) => {
+            return (
+              <Btn
+                className=''
+                to={menuLabelUrl}
+                key={i}
+              >
+                <li
+                  className={
+                  isMobile
+                    ? 'code'
+                    : 'code'
+                }
+                  onClick={() => setDropdown(oldState => !oldState)}
+                >{menuLabel}
+                </li>
+              </Btn>
+            )
+          })
+        }
       </ul>
-      <button onClick={cambiarDropdown} className='nav-button'>
+      {/* Al hacer click, cambiará el estado de mobile a desktop */}
+      <button onClick={cambiarDropdown} className={dropdown ? 'nav-button active' : 'nav-button'}>
         <img src={!dropdown ? '../src/img/menu.svg' : '../src/img/close.svg'} />
       </button>
     </nav>
