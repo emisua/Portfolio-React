@@ -10,16 +10,7 @@
   position: relative;
   gap: 1rem;
 }
-.sobremi ul li{
-  display: flex;
-  flex-direction: column;
-  margin: 1rem auto 1.5rem;
-}
-.sobremi ul span{
-  font-size: .8rem;
-  margin: 1rem auto;
-  opacity: .6;
-}
+
 .sobremi .content .text{
   margin-bottom: 2rem;
 }

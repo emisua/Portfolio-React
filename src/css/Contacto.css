@@ -1,0 +1,33 @@
+.contacto{
+  margin-bottom: 3rem;
+}
+
+.contacto .content .text{
+  margin-bottom: 2rem;
+}
+
+.contacto .content p{
+  margin-bottom: 2rem;
+}
+
+.contacto .content .title{
+  margin: 1rem auto ;
+}
+
+.contacto .content img{
+  max-width: 66px;
+  margin: 0 auto;
+}
+
+/* DESKTOP */
+
+.desktop .contacto .content img{
+  max-width: 100px;
+}
+
+.desktop .contacto .content{
+  background-color: var(--white);
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+}
