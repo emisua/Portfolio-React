@@ -1,6 +1,6 @@
 import '../src/css/Title.css'
 
-const Title = ({ children, title, size, className }) => {
+const Title = ({ children, title, size, className = '' }) => {
   const Tag = `h${size}`
   if (title !== undefined) {
     return <Tag className={`title ${className}`}>{title}</Tag>

@@ -1,4 +1,4 @@
-const Text = ({ children, className, color }) => {
+const Text = ({ children, className = '', color }) => {
   return (
     <p className={className} style={{ color: `${color}` }}>
       {children}
