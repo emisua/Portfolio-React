@@ -29,11 +29,11 @@
     "desc": ["parrafo 1", "parrafo 2"]
   },
   {
-    "nombre": "Lamode Biopic",
-    "slug": "lamode",
+    "nombre": "Titiriscopio",
+    "slug": "titiriscopio",
     "img": {
       "logo": "logo.jpg",
-      "poster": "src/img/lamode/poster.jpg"
+      "poster": "src/img/titiriscopio/poster.jpg"
     },
     "color": "red",
     "id": 3,
@@ -42,65 +42,13 @@
     "desc": ["parrafo 1", "parrafo 2"]
   },
   {
-    "nombre": "Titiriscopio",
-    "slug": "titiriscopio",
+    "nombre": "Las Pituister",
+    "slug": "pituister",
     "img": {
       "logo": "logo.jpg",
-      "poster": "src/img/titiriscopio/poster.jpg"
-    },
-    "color": "orange",
-    "id": 4,
-    "url": "https://",
-    "tags": ["Wordpress", "Kadence"],
-    "desc": ["parrafo 1", "parrafo 2"]
-  },
-  {
-    "nombre": "Lamode Biopic",
-    "slug": "lamode",
-    "img": {
-      "logo": "logo.jpg",
-      "poster": "src/img/lamode/poster.jpg"
+      "poster": "src/img/pituister/poster.jpg"
     },
     "color": "red",
-    "id": 3,
-    "url": "https://",
-    "tags": ["Wordpress"],
-    "desc": ["parrafo 1", "parrafo 2"]
-  },
-  {
-    "nombre": "Titiriscopio",
-    "slug": "titiriscopio",
-    "img": {
-      "logo": "logo.jpg",
-      "poster": "src/img/titiriscopio/poster.jpg"
-    },
-    "color": "orange",
-    "id": 4,
-    "url": "https://",
-    "tags": ["Wordpress", "Kadence"],
-    "desc": ["parrafo 1", "parrafo 2"]
-  },
-  {
-    "nombre": "Lamode Biopic",
-    "slug": "lamode",
-    "img": {
-      "logo": "logo.jpg",
-      "poster": "src/img/lamode/poster.jpg"
-    },
-    "color": "red",
-    "id": 3,
-    "url": "https://",
-    "tags": ["Wordpress"],
-    "desc": ["parrafo 1", "parrafo 2"]
-  },
-  {
-    "nombre": "Titiriscopio",
-    "slug": "titiriscopio",
-    "img": {
-      "logo": "logo.jpg",
-      "poster": "src/img/titiriscopio/poster.jpg"
-    },
-    "color": "orange",
     "id": 4,
     "url": "https://",
     "tags": ["Wordpress", "Kadence"],
