@@ -38,10 +38,10 @@ function App () {
     >
       <Navbar isMobile={isMobile} />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/sobre-mi' element={<SobreMi />} />
-        <Route path='/proyectos' element={<Proyectos />} />
-        <Route path='/contacto' element={<Contacto />} />
+        <Route path='/' element={<Home isMobile={isMobile} />} />
+        <Route path='/sobre-mi' element={<SobreMi isMobile={isMobile} />} />
+        <Route path='/proyectos' element={<Proyectos isMobile={isMobile} />} />
+        <Route path='/contacto' element={<Contacto isMobile={isMobile} />} />
       </Routes>
     </main>
   )
