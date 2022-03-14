@@ -21,7 +21,6 @@ const Home = () => {
         <div className='spacer' />
         <div className='texto'>
           <Title size='1' className='bebas'>
-            <br />
             <span className='color-secondary-darker display'>EMILIO SUÁREZ</span>
             <br />
             <span className='color-primary'>Frontend developer</span>
