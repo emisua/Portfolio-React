@@ -1,12 +1,9 @@
-.header {
-  min-height: 100vh;
-}
-
 .home {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 5rem);
   overflow: hidden;
+  margin-top: 3rem;
 }
 
 .home .img-portada {
@@ -16,6 +13,7 @@
   object-fit: contain;
   object-position: 0% 100%;
   width: 100%;
+  margin-top: auto;
 }
 
 .home .grid.container {
@@ -57,10 +55,7 @@
   flex-direction: row;
   max-height: 100vh;
   justify-content: center;
-}
-
-.desktop .img-portada {
-  max-width: 60vw;
+  margin-top: 0;
 }
 
 .desktop .grid.container {
@@ -84,5 +79,5 @@
   object-fit: contain;
   object-position: 0% 100%;
   width: 100%;
-  order: 1
+  order: 1;
 }

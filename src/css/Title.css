@@ -1,9 +1,7 @@
-h3.title {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+.title {
 }
 
-h3.title::before {
+.title::before {
   contain: "";
   background-color: red;
   top: 0;

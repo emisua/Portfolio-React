@@ -1,0 +1,54 @@
+.sobremi{
+  margin-bottom: 3rem;
+}
+
+.sobremi ul.grid-tecnologias{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 58px), 1fr));
+  list-style: none;
+  padding: 0;
+  position: relative;
+  gap: 1rem;
+}
+.sobremi ul li{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto 1.5rem;
+}
+.sobremi ul span{
+  font-size: .8rem;
+  margin: 1rem auto;
+  opacity: .6;
+}
+.sobremi .content .text{
+  margin-bottom: 2rem;
+}
+.sobremi .content p{
+  margin-bottom: 2rem;
+}
+
+.sobremi .content .title{
+  margin: 1rem auto ;
+}
+
+.sobremi .content img{
+  max-width: 66px;
+  margin: 0 auto;
+}
+
+/* DESKTOP */
+
+.desktop .sobremi .content img{
+  max-width: 100px;
+}
+
+.desktop .sobremi ul.grid-tecnologias{
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 130px), 1fr));
+}
+
+.desktop .sobremi .content{
+  background-color: var(--white);
+  position: relative;
+  padding: 2rem;
+  border-radius: 1rem;
+}

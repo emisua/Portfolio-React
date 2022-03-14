@@ -15,6 +15,10 @@
   --secondary-light-90: hsl(196, 19%, 85%, 0.9);
   --white-10: hsla(0, 0%, 100%, 0.5);
   --text-dark: hsl(197deg 20% 30%);
+  --white: #fff;
+  --black: #000;
+  --js: #f8e018;
+  --react: #61dafb
 }
 
 .color-primary {
@@ -41,4 +45,24 @@
 }
 .color-secondary-darker {
   color: var(--secondary-darker);
+}
+
+.color-white{
+  color: #fff;
+}
+
+.color-black{
+  color: #000;
+}
+
+.featured{
+  background-color: var(--js);
+  padding: .1rem;
+}
+
+.react{
+  background-color: var(--react);
+}
+.color-react{
+  color: var(--react);
 }

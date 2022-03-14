@@ -81,6 +81,27 @@ p {
 
 /* STYLE */
 
-.featured {
-  color: rgb(255, 123, 0);
+.desktop .overlay-dark:before{
+  position: absolute !important;
+  content: "" !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,.4) 30%, var(--white));
+  background-blend-mode: multiply;
+  opacity: 1;
+  z-index: 0;
+}
+
+.desktop .overlay-light:before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  opacity: .4;
+  z-index: 0;
 }

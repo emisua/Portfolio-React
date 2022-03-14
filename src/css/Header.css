@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  padding: 3vh 0;
+  margin-bottom: 0vh;
+  text-align: center;
+  background-size: cover;
+}
+
+.header .title{
+  padding: 0;
+  border-radius: 1rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 2rem 0 3rem;
+  line-height: clamp(1.5rem, 4.6vw, 4rem);
+  display: inline-flex;
+  
+}
+
+/* DESKTOP */
+
+.desktop .header{
+  padding: 10vh 0 18vh;
+  margin-bottom: -8vh;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+}
+
+.header *{
+  z-index: 0;
+}
+
+.desktop .header .title{
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom: 2rem;
+  line-height: clamp(1.5rem, 2.5vw, 4rem);
+  display: inline-flex;
+}

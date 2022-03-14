@@ -4,7 +4,7 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   height: 4rem;
   align-items: center;
   padding: 1rem;
@@ -47,6 +47,7 @@
   transition: all 0.4s ease-in-out;
   bottom: 8rem;
   top: auto;
+  pointer-events: none;
 }
 
 .navbar ul a {
@@ -87,7 +88,7 @@
   margin-right: 1rem;
 }
 
-.navbar button {
+.nav-button {
   border: 0;
   background-color: var(--secondary-light-80);
   padding: 0;
@@ -102,16 +103,28 @@
   border-radius: 50px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 11px -4px rgb(0 0 0 / 50%);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
 
-.navbar button img {
+.nav-button button img {
   height: 2rem;
+}
+
+.nav-button.active{
+  background-color: var(--primary-light-80);;
 }
 
 /* Estilos para PC */
 
 .desktop .navbar {
-  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 10;
 }
 .desktop .navbar ul {
   list-style: none;
@@ -128,14 +141,7 @@
   backdrop-filter: none;
   background-color: transparent;
   right: inherit;
-}
-
-.desktop .navbar ul a {
-  background-color: antiquewhite;
-  width: auto;
-  padding: 0.5rem;
-  text-align: center;
-  color: black;
+  padding: 0;
 }
 
 .desktop .navbar .nav-button {
