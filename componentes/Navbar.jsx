@@ -1,6 +1,7 @@
 import '../src/css/Navbar.css'
 import { useState, useRef, useEffect } from 'react'
 import Btn from './Btn'
+import { Link } from 'react-router-dom'
 
 const Navbar = ({ isMobile }) => {
   const [dropdown, setDropdown] = useState(false)
@@ -13,13 +14,13 @@ const Navbar = ({ isMobile }) => {
       // If the menu is open and the clicked target is not within the menu,
       // then close the menu
       if (dropdown && ref.current && !ref.current.contains(e.target)) {
-        setDropdown(false)
+        cambiarDropdown()
       }
     }
-    document.addEventListener('mousedown', checkIfClickedOutside)
+    document.addEventListener('click', checkIfClickedOutside)
     return () => {
     // Cleanup the event listener
-      document.removeEventListener('mousedown', checkIfClickedOutside)
+      document.removeEventListener('click', checkIfClickedOutside)
     }
   }, [dropdown])
 
@@ -40,13 +41,14 @@ const Navbar = ({ isMobile }) => {
           : 'navbar container'
       }
     >
-      <a className='logo-zone' href='/'>
+      <Link className='logo-zone' to='/'>
         <img src='../src/img/logo.svg' alt='' className='logo' />
         <div className='texto code'>
           <span className='name'>Emilio Suárez</span>
           <span className='desc'>Frontend developer</span>
         </div>
-      </a>
+      </Link>
+      <Link to='/'><img src='../src/img/avatar.png' className='avatar' /></Link>
       <ul ref={ref}>
         {
           // Convierte el objeto "menuItems" en un array para hacer el map. Le pasa la Key y el Value de la key por props. La Key es menuLabel y el value es menuLabelUrl.
@@ -63,7 +65,7 @@ const Navbar = ({ isMobile }) => {
                     ? 'code'
                     : 'code'
                 }
-                  onClick={() => setDropdown(oldState => !oldState)}
+                  onClick={() => cambiarDropdown()}
                 >{menuLabel}
                 </li>
               </Btn>
@@ -72,8 +74,21 @@ const Navbar = ({ isMobile }) => {
         }
       </ul>
       {/* Al hacer click, cambiará el estado de mobile a desktop */}
-      <button onClick={cambiarDropdown} className={dropdown ? 'nav-button active' : 'nav-button'}>
-        <img src={!dropdown ? '../src/img/menu.svg' : '../src/img/close.svg'} />
+      <button
+        onClick={cambiarDropdown}
+        className={
+          dropdown
+            ? 'nav-button active'
+            : 'nav-button'
+        }
+      >
+        <img
+          src={
+            dropdown
+              ? '../src/img/close.svg'
+              : '../src/img/menu.svg'
+          }
+        />
       </button>
     </nav>
   )

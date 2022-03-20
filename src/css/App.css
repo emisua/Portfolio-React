@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+body{
+  min-height: 100vh;
+  position: relative;
+}
+
 a {
   text-decoration: none;
   color: initial;
@@ -33,7 +38,7 @@ p {
 /* FUENTES */
 
 .code {
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', sans-serif;
 }
 
 .bebas {
@@ -78,6 +83,9 @@ p {
 .flex.column {
   flex-direction: column;
 }
+.pb4{
+  padding-bottom: 4rem;
+}
 
 /* STYLE */
 
@@ -95,13 +103,19 @@ p {
 }
 
 .desktop .overlay-light:before{
-  position: absolute;
-  content: "";
+  position: absolute !important;
+  content: "" !important;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
-  opacity: .4;
+  background: linear-gradient(rgba(255, 255, 255, 0.4) 30%, var(--white));
+  background-blend-mode: multiply;
+  opacity: 1;
   z-index: 0;
+}
+
+.featured{
+  padding: 0.05rem 0.3rem;
+  border-radius: 5px;
 }

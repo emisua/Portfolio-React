@@ -1,13 +1,7 @@
 import '../../src/css/Home.css'
 import Btn from '../Btn'
-// import BlurredBlob from '../BlurredBlob'
 import Text from '../Text'
 import Title from '../Title'
-
-const parrafo1 =
-  'De pequeño me gustaba mucho dibujar y sacaba buenas notas en ello. Hice el Bachiller de artes por ese motivo con la idea de comenzar Diseño Gráfico. Mis gustos fueron derivando hacia lo audiovisual e hice una FP II en Realización de Audiovisuales. Mientras estudiaba el ciclo, en mis ratos libres aprendí a hacer webs por hobby hasta que decidí dedicarme a ello'
-
-const parrafo2 = 'Hoy en día lo que me apasiona'
 
 const Home = () => {
   return (
@@ -25,21 +19,22 @@ const Home = () => {
             <br />
             <span className='color-primary'>Frontend developer</span>
           </Title>
-          <Text className='code' color='var(--text-dark)'>
-            {parrafo1}.
-          </Text>
-          <Text className='code' color='var(--text-dark)'>
-            {parrafo2}.
-          </Text>
+          <div className='text code'>
+            <Text>
+              Soy un <strong>apasionado de la tecnología.</strong> Desde que descubrí el diseño y desarrollo web, no he parado de indagar en ello.
+            </Text>
+            <Text>
+              Actualmente estoy centrado en <strong>aprender, mejorar, y especializarme en <i className='featured bg-js'>JavaScript</i></strong>. Esto lo acompaño con el framework <strong><i className=' featured bg-react'>React</i></strong>, con el que está hecho este portfolio.
+            </Text>
+            <Text>
+              En un futuro me gustaría aprender otros frameworks como <i>Vue</i> o <i>Angular</i>. Soy autodidacta y aprendo algo nuevo cada día.
+            </Text>
+          </div>
           <Btn className='code secondary' to='/proyectos' color='red'>
             Ver proyectos
           </Btn>
         </div>
       </div>
-
-      {/* <div className='bg'>
-        <BlurredBlob fill1='secondary-light' fill2='primary-light' />
-      </div> */}
     </section>
   )
 }

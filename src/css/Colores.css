@@ -46,23 +46,25 @@
 .color-secondary-darker {
   color: var(--secondary-darker);
 }
-
 .color-white{
   color: #fff;
 }
-
 .color-black{
   color: #000;
 }
 
-.featured{
-  background-color: var(--js);
-  padding: .1rem;
-}
-
-.react{
-  background-color: var(--react);
-}
 .color-react{
   color: var(--react);
+}
+.bg-react{
+  background-color: var(--react);
+}
+.bg-js{
+  background-color: var(--js);
+}
+.bg-primary{
+  background-color: var(--primary);
+}
+.bg-secondary{
+  background-color: var(--secondary);
 }

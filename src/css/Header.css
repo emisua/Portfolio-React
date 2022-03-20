@@ -19,7 +19,7 @@
 /* DESKTOP */
 
 .desktop .header{
-  padding: 10vh 0 18vh;
+  padding: 4vh 0 12vh;
   margin-bottom: -8vh;
   background-size: cover !important;
   background-position: center !important;
@@ -32,9 +32,9 @@
 
 .desktop .header .title{
   background-color: var(--white);
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-radius: 1rem;
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 2rem;
   line-height: clamp(1.5rem, 2.5vw, 4rem);
   display: inline-flex;

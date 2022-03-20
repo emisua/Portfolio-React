@@ -19,6 +19,25 @@
   margin: 0 auto;
 }
 
+.contacto .form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-flow: column;
+}
+
+.contacto .content h4,
+.contacto .content h2{
+  text-align: center;
+}
+
+.contacto h4{
+  font-size: clamp(2rem, 10vw, 7rem);
+  font-weight: normal;
+  margin-top: 3rem;
+}
+
 /* DESKTOP */
 
 .desktop .contacto .content img{

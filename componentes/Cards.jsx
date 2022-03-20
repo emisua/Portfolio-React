@@ -21,7 +21,7 @@ const Cards = () => {
 
   return filtrar.map((proyecto, index) => (
     <div className='card' key={index}>
-      <a href={proyecto.url}>
+      <a href={proyecto.url} target='_blank' rel='noopener noreferrer'>
         <div className='img'>
           <img src={proyecto.img.poster} alt='' />
         </div>
@@ -34,7 +34,7 @@ const Cards = () => {
             ))}
           </div>
           <h4 className='title'>{proyecto.nombre}</h4>
-          <div className='desc'>{proyecto.desc[0]}</div>
+          <div className='desc code'>{proyecto.desc[0]}</div>
         </div>
       </a>
     </div>

@@ -164,6 +164,6 @@
 
 @media (min-width: 60rem) {
   .desktop .card {
-    aspect-ratio: 2 / 3;
+    aspect-ratio: 5 / 6;
   }
 }
