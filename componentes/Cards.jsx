@@ -1,6 +1,7 @@
 import proyectos from '../src/proyectos.json'
 import { useEffect, useState } from 'react'
 import '../src/css/Card.css'
+import images from '../src/assests/images'
 
 const Cards = () => {
   const categorias = {
@@ -18,12 +19,13 @@ const Cards = () => {
   const filtrar = proyectos.filter((proyecto) =>
     proyecto.tags.includes(categoriaActiva)
   )
+  console.log(images)
 
   return filtrar.map((proyecto, index) => (
     <div className='card' key={index}>
       <a href={proyecto.url} target='_blank' rel='noopener noreferrer'>
         <div className='img'>
-          <img src={proyecto.img.poster} alt='' />
+          <img src={`${images}.${proyecto.poster}`} alt={proyecto.title} />
         </div>
         <div className='content'>
           <div className='tags'>

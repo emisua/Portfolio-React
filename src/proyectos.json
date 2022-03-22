@@ -4,7 +4,7 @@
     "slug": "sensei",
     "img": {
       "logo": "logo.jpg",
-      "poster": "src/img/sensei/poster.jpg"
+      "poster": "coverSensei"
     },
     "color": "red",
     "id": 1,
@@ -20,7 +20,7 @@
     "slug": "sensei-infantil",
     "img": {
       "logo": "logo.jpg",
-      "poster": "src/img/sensei-infantil/poster.jpg"
+      "poster": "coverSenseiInfantil"
     },
     "color": "red",
     "id": 2,
@@ -33,7 +33,7 @@
     "slug": "titiriscopio",
     "img": {
       "logo": "logo.jpg",
-      "poster": "src/img/titiriscopio/poster.jpg"
+      "poster": "coverTitiriscopio"
     },
     "color": "red",
     "id": 3,
@@ -46,7 +46,7 @@
     "slug": "pituister",
     "img": {
       "logo": "logo.jpg",
-      "poster": "src/img/pituister/poster.jpg"
+      "poster": "coverPituister"
     },
     "color": "red",
     "id": 4,
