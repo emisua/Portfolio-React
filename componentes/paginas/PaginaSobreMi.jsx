@@ -4,13 +4,27 @@ import Figure from '../Figure'
 import '../../src/css/Sobremi.css'
 import Footer from '../Footer'
 import Text from '../Text'
+import bootstrap from '../../src/img/logos/bootstrap.svg'
+import css from '../../src/img/logos/css.svg'
+import html from '../../src/img/logos/html.svg'
+import js from '../../src/img/logos/js.svg'
+import orchard from '../../src/img/logos/orchard.svg'
+import prestashop from '../../src/img/logos/prestashop.svg'
+import react from '../../src/img/logos/react.svg'
+import svelte from '../../src/img/logos/svelte.svg'
+import tailwind from '../../src/img/logos/tailwind.svg'
+import typescript from '../../src/img/logos/typescript.svg'
+import vue from '../../src/img/logos/vue.svg'
+import wordpress from '../../src/img/logos/wordpress.svg'
+import ghost from '../../src/img/logos/ghost.png'
+import bgSobreMi from '../../src/img/bg-sobremi.jpg'
 
 const SobreMi = ({ isMobile }) => {
   return (
     <main className='sobremi'>
       <Header
         className='overlay-light color-black code'
-        imgUrl='../src/img/bg-sobremi.jpg'
+        imgUrl={bgSobreMi}
         isMobile={isMobile}
       >
         <div className='container'>
@@ -44,27 +58,27 @@ const SobreMi = ({ isMobile }) => {
               <ul className='grid-tecnologias'>
                 <li>
                   <Figure
-                    src='../../src/img/logos/html.svg'
+                    src={html}
                     label='HTML'
                   />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/css.svg'
+                  src={css}
                   label='CSS'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/js.svg'
+                  src={js}
                   label='JS'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/react.svg'
+                  src={react}
                   label='React'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/bootstrap.svg'
+                  src={bootstrap}
                   label='Bootstrap'
                     />
                 </li>
@@ -74,22 +88,22 @@ const SobreMi = ({ isMobile }) => {
               <Title size='3' title='-> CMS y eCommerce que utilizo' />
               <ul className='grid-tecnologias'>
                 <li><Figure
-                  src='../../src/img/logos/wordpress.svg'
+                  src={wordpress}
                   label='Wordpress'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/orchard.svg'
+                  src={orchard}
                   label='Orchard'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/ghost.png'
+                  src={ghost}
                   label='Ghost'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/prestashop.svg'
+                  src={prestashop}
                   label='Prestashop'
                     />
                 </li>
@@ -99,22 +113,22 @@ const SobreMi = ({ isMobile }) => {
               <Title size='3' title='-> Tecnologías que aprenderé' />
               <ul className='grid-tecnologias'>
                 <li><Figure
-                  src='../../src/img/logos/svelte.svg'
+                  src={svelte}
                   label='Svelte'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/vue.svg'
+                  src={vue}
                   label='Vue'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/tailwind.svg'
+                  src={tailwind}
                   label='Tailwind'
                     />
                 </li>
                 <li><Figure
-                  src='../../src/img/logos/typescript.svg'
+                  src={typescript}
                   label='Typescript'
                     />
                 </li>

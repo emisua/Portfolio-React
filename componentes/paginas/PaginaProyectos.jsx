@@ -10,7 +10,7 @@ const Proyectos = ({ isMobile }) => {
       <main className='proyectos pb4'>
         <Header
           className='overlay-dark color-black code'
-          imgUrl='../src/img/bg-proyectos.jpg'
+          imgUrl='../../src/assets/bg-proyectos.jpg'
           isMobile={isMobile}
         >
           <div className='container'>
