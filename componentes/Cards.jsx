@@ -27,7 +27,7 @@ const Cards = () => {
     <div className='card' key={index}>
       <a href={proyecto.url} target='_blank' rel='noopener noreferrer'>
         <div className='img'>
-          <img src={`${images}.cover${proyecto.title}`} alt={proyecto.title} />
+          <img src={images.coverSensei} alt={proyecto.title} />
         </div>
         <div className='content'>
           <div className='tags'>
