@@ -4,6 +4,8 @@ import '../src/css/Card.css'
 import images from '../src/assests/images'
 
 const Cards = () => {
+  const obj = { ...proyectos, ...images }
+  console.log(obj)
   const categorias = {
     // nombre: estado que va a cambiar al filtrar
     kadence: 'Kadence',
@@ -25,7 +27,7 @@ const Cards = () => {
     <div className='card' key={index}>
       <a href={proyecto.url} target='_blank' rel='noopener noreferrer'>
         <div className='img'>
-          <img src={`${images}.${proyecto.poster}`} alt={proyecto.title} />
+          <img src={`${images}.cover${proyecto.title}`} alt={proyecto.title} />
         </div>
         <div className='content'>
           <div className='tags'>

@@ -1,4 +1,4 @@
-import bootstrap from './img/logos/bootstrap.svg'
+
 import css from './img/logos/css.svg'
 import html from './img/logos/html.svg'
 import js from './img/logos/js.svg'
@@ -25,7 +25,7 @@ import coverPituister from './img/pituister/poster.jpg'
 import coverTitiriscopio from './img/titiriscopio/poster.jpg'
 
 export default {
-  bootstrap: bootstrap,
+  bootstrap2: require('./img/logos/bootstrap.svg'),
   css: css,
   html: html,
   js: js,

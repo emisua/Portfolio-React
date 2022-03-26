@@ -65,7 +65,7 @@ const SobreMi = ({ isMobile }) => {
                     />
                 </li>
                 <li><Figure
-                  src={images.bootstrap}
+                  src={images.bootstrap2}
                   label='Bootstrap'
                     />
                 </li>
