@@ -3,7 +3,7 @@ import Title from '../Title'
 import '../../src/css/Proyectos.css'
 import Header from '../Header'
 import Footer from '../Footer'
-import images from '../../src/assests/images'
+// import images from '../../src/assests/images'
 
 const Proyectos = ({ isMobile }) => {
   return (
@@ -11,7 +11,7 @@ const Proyectos = ({ isMobile }) => {
       <main className='proyectos pb4'>
         <Header
           className='overlay-dark color-black code'
-          imgUrl={images.bgProyectos}
+          imgUrl='./assets/img/bg-proyectos.jpg'
           isMobile={isMobile}
         >
           <div className='container'>

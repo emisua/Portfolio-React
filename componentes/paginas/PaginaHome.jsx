@@ -2,14 +2,14 @@ import '../../src/css/Home.css'
 import Btn from '../Btn'
 import Text from '../Text'
 import Title from '../Title'
-import images from '../../src/assests/images'
+// import images from '../../src/assests/images'
 
 const Home = () => {
   return (
     <section className='home'>
       <img
         className='img-portada'
-        src={images.bgHome}
+        src='./assets/img/bg-home.jpg'
         alt='Emilio Suárez - Frontend Developer'
       />
       <div className='grid container'>

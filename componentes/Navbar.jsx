@@ -2,7 +2,7 @@ import '../src/css/Navbar.css'
 import { useState, useRef, useEffect } from 'react'
 import Btn from './Btn'
 import { Link } from 'react-router-dom'
-import images from '../src/assests/images'
+// import images from '../src/assests/images'
 
 const Navbar = ({ isMobile }) => {
   const [dropdown, setDropdown] = useState(false)
@@ -43,13 +43,13 @@ const Navbar = ({ isMobile }) => {
       }
     >
       <Link className='logo-zone' to='/'>
-        <img src={images.logo} alt='' className='logo' />
+        <img src='./assets/img/logo.svg' alt='' className='logo' />
         <div className='texto code'>
           <span className='name'>Emilio Suárez</span>
           <span className='desc'>Frontend developer</span>
         </div>
       </Link>
-      <Link to='/'><img src={images.avatar} className='avatar' /></Link>
+      <Link to='/'><img src='./assets/img/avatar.png' className='avatar' /></Link>
       <ul ref={ref}>
         {
           // Convierte el objeto "menuItems" en un array para hacer el map. Le pasa la Key y el Value de la key por props. La Key es menuLabel y el value es menuLabelUrl.
@@ -86,8 +86,8 @@ const Navbar = ({ isMobile }) => {
         <img
           src={
             dropdown
-              ? images.close
-              : images.menu
+              ? './assets/img/close.svg'
+              : './assets/img/menu.svg'
           }
         />
       </button>

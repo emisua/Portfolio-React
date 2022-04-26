@@ -4,14 +4,14 @@ import Figure from '../Figure'
 import '../../src/css/Sobremi.css'
 import Footer from '../Footer'
 import Text from '../Text'
-import images from '../../src/assests/images'
+// import images from '../../src/assests/images'
 
 const SobreMi = ({ isMobile }) => {
   return (
     <main className='sobremi'>
       <Header
         className='overlay-light color-black code'
-        imgUrl={images.bgSobreMi}
+        imgUrl='./assets/img/bg-sobremi.jpg'
         isMobile={isMobile}
       >
         <div className='container'>
@@ -45,27 +45,27 @@ const SobreMi = ({ isMobile }) => {
               <ul className='grid-tecnologias'>
                 <li>
                   <Figure
-                    src={images.html}
+                    src='./assets/img/logos/html.svg'
                     label='HTML'
                   />
                 </li>
                 <li><Figure
-                  src={images.css}
+                  src='./assets/img/logos/css.svg'
                   label='CSS'
                     />
                 </li>
                 <li><Figure
-                  src={images.js}
+                  src='./assets/img/logos/js.svg'
                   label='JS'
                     />
                 </li>
                 <li><Figure
-                  src={images.react}
+                  src='./assets/img/logos/react.svg'
                   label='React'
                     />
                 </li>
                 <li><Figure
-                  src={images.bootstrap}
+                  src='./assets/img/logos/bootstrap.svg'
                   label='Bootstrap'
                     />
                 </li>
@@ -75,22 +75,22 @@ const SobreMi = ({ isMobile }) => {
               <Title size='3' title='-> CMS y eCommerce que utilizo' />
               <ul className='grid-tecnologias'>
                 <li><Figure
-                  src={images.wordpress}
+                  src='./assets/img/logos/wordpress.svg'
                   label='Wordpress'
                     />
                 </li>
                 <li><Figure
-                  src={images.orchard}
+                  src='./assets/img/logos/orchard.svg'
                   label='Orchard'
                     />
                 </li>
                 <li><Figure
-                  src={images.ghost}
+                  src='./assets/img/logos/ghost.png'
                   label='Ghost'
                     />
                 </li>
                 <li><Figure
-                  src={images.prestashop}
+                  src='./assets/img/logos/prestashop.svg'
                   label='Prestashop'
                     />
                 </li>
@@ -100,22 +100,22 @@ const SobreMi = ({ isMobile }) => {
               <Title size='3' title='-> Tecnologías que aprenderé' />
               <ul className='grid-tecnologias'>
                 <li><Figure
-                  src={images.svelte}
+                  src='./assets/img/logos/svelte.svg'
                   label='Svelte'
                     />
                 </li>
                 <li><Figure
-                  src={images.vue}
+                  src='./assets/img/logos/vue.svg'
                   label='Vue'
                     />
                 </li>
                 <li><Figure
-                  src={images.tailwind}
+                  src='./assets/img/logos/tailwind.svg'
                   label='Tailwind'
                     />
                 </li>
                 <li><Figure
-                  src={images.typescript}
+                  src='./assets/img/logos/typescript.svg'
                   label='Typescript'
                     />
                 </li>

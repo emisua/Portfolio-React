@@ -3,7 +3,7 @@ import Header from '../Header'
 // import Input from '../Input'
 import '../../src/css/Contacto.css'
 import Footer from '../Footer'
-import images from '../../src/assests/images'
+// import images from '../../src/assests/images'
 
 const Contacto = ({ isMobile }) => {
   // const inputNombre = {
@@ -29,7 +29,7 @@ const Contacto = ({ isMobile }) => {
     <section className='contacto'>
       <Header
         className='overlay-dark color-black code'
-        imgUrl={images.bgContacto}
+        imgUrl='./assets/img/bg-contacto.jpg'
         isMobile={isMobile}
       >
         <div className='container'>

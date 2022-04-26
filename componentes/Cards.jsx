@@ -1,11 +1,11 @@
 import proyectos from '../src/proyectos.json'
 import { useEffect, useState } from 'react'
 import '../src/css/Card.css'
-import images from '../src/assests/images'
+// import images from '../src/assests/images'
 
 const Cards = () => {
-  const obj = { ...proyectos, ...images }
-  console.log(obj)
+  // const obj = { ...proyectos, ...images }
+  // console.log(obj)
   const categorias = {
     // nombre: estado que va a cambiar al filtrar
     kadence: 'Kadence',
@@ -21,13 +21,13 @@ const Cards = () => {
   const filtrar = proyectos.filter((proyecto) =>
     proyecto.tags.includes(categoriaActiva)
   )
-  console.log(images)
+  // console.log(images)
 
   return filtrar.map((proyecto, index) => (
     <div className='card' key={index}>
       <a href={proyecto.url} target='_blank' rel='noopener noreferrer'>
         <div className='img'>
-          <img src={images.coverSensei} alt={proyecto.title} />
+          <img src='./assets/img/avatar.png' alt={proyecto.title} />
         </div>
         <div className='content'>
           <div className='tags'>
