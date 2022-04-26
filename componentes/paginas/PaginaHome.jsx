@@ -9,7 +9,7 @@ const Home = () => {
     <section className='home'>
       <img
         className='img-portada'
-        src='./assets/img/bg-home.jpg'
+        src='./img/bg-home.jpg'
         alt='Emilio Suárez - Frontend Developer'
       />
       <div className='grid container'>
