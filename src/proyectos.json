@@ -53,5 +53,18 @@
     "url": "https://laspituister.com",
     "tags": ["Wordpress", "Kadence"],
     "desc": ["parrafo 1", "parrafo 2"]
+  },
+  {
+    "nombre": "De La Zarzuelita",
+    "slug": "zarzuelita",
+    "img": {
+      "logo": "logo.jpg",
+      "poster": "./assets/img/zarzuelita/poster.jpg"
+    },
+    "color": "red",
+    "id": 4,
+    "url": "https://delazarzuelita.es",
+    "tags": ["Prestashop"],
+    "desc": ["parrafo 1", "parrafo 2"]
   }
 ]

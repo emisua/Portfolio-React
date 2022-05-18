@@ -10,6 +10,7 @@ const Cards = () => {
     // nombre: estado que va a cambiar al filtrar
     kadence: 'Kadence',
     wordpress: 'Wordpress',
+    prestashop: 'Prestashop',
     all: 'Kadence' && 'Wordpress'
   }
   const [categoriaActiva, setCategoriaActiva] = useState(categorias.all)
