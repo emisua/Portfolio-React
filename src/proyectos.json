@@ -11,8 +11,7 @@
     "url": "https://senseimultimedia.com",
     "tags": ["Wordpress"],
     "desc": [
-      "Contrary to popular belief, Lorem Ipsum is not simply random text.",
-      "parrafo 2"
+      "Productora audiovisual y multimedia"
     ]
   },
   {
@@ -26,7 +25,7 @@
     "id": 2,
     "url": "https://senseifotografiainfantil.com",
     "tags": ["Wordpress", "Kadence"],
-    "desc": ["parrafo 1", "parrafo 2"]
+    "desc": ["Parte dedicada a infantil en Sensei Multimedia"]
   },
   {
     "nombre": "Titiriscopio",
@@ -39,7 +38,7 @@
     "id": 3,
     "url": "https://titiriscopio.eu",
     "tags": ["Wordpress"],
-    "desc": ["parrafo 1", "parrafo 2"]
+    "desc": ["Compañía especializada en espectáculos de toda índole"]
   },
   {
     "nombre": "Las Pituister",
@@ -52,7 +51,7 @@
     "id": 4,
     "url": "https://laspituister.com",
     "tags": ["Wordpress", "Kadence"],
-    "desc": ["parrafo 1", "parrafo 2"]
+    "desc": ["Llevan mas de 20 años siendo Payasas"]
   },
   {
     "nombre": "De La Zarzuelita",
@@ -65,6 +64,6 @@
     "id": 4,
     "url": "https://delazarzuelita.es",
     "tags": ["Prestashop"],
-    "desc": ["parrafo 1", "parrafo 2"]
+    "desc": ["Tienda online de moda y accesorios para bebé"]
   }
 ]
