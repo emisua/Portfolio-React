@@ -15,16 +15,18 @@ const Cards = () => {
   }
   const [categoriaActiva, setCategoriaActiva] = useState(categorias.all)
 
-  useEffect(() => {
+  /*
+ useEffect(() => {
     setCategoriaActiva(categorias.all)
   }, [])
 
   const filtrar = proyectos.filter((proyecto) =>
     proyecto.tags.includes(categoriaActiva)
   )
+ */
   // console.log(images)
 
-  return filtrar.map((proyecto, index) => (
+  return proyectos.map((proyecto, index) => (
     <div className='card' key={index}>
       <a href={proyecto.url} target='_blank' rel='noopener noreferrer'>
         <div className='img'>
