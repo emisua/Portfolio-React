@@ -45,7 +45,7 @@ const Navbar = ({ isMobile }) => {
       <Link className='logo-zone group' to='/'>
         <img src='./assets/img/logo.svg' alt='' className='logo' />
         <div className='texto code'>
-          <span className='name group-hover:text-primary'>Emilio Suárez</span>
+          <span className='name group-hover:text-primary transition-all duration-200 ease-in-out'>Emilio Suárez</span>
           <span className='desc'>Frontend developer</span>
         </div>
       </Link>
