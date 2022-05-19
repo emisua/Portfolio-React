@@ -41,7 +41,7 @@ const SobreMi = ({ isMobile }) => {
           </div>
           <div className='col code'>
             <div className='tecnologias'>
-              <Title size='3' title='-> Tecnologías que utilizo' />
+              <Title className='text-lg' size='3' title='-> Tecnologías que utilizo' />
               <ul className='grid-tecnologias'>
                 <li>
                   <Figure
@@ -72,7 +72,7 @@ const SobreMi = ({ isMobile }) => {
               </ul>
             </div>
             <div className='cms'>
-              <Title size='3' title='-> CMS y eCommerce que utilizo' />
+              <Title className='text-lg' size='3' title='-> CMS y eCommerce que utilizo' />
               <ul className='grid-tecnologias'>
                 <li><Figure
                   src='./assets/img/logos/wordpress.svg'
@@ -97,7 +97,7 @@ const SobreMi = ({ isMobile }) => {
               </ul>
             </div>
             <div className='ecommerce'>
-              <Title size='3' title='-> Tecnologías que aprenderé' />
+              <Title className='text-lg' size='3' title='-> Tecnologías que aprenderé' />
               <ul className='grid-tecnologias'>
                 <li><Figure
                   src='./assets/img/logos/svelte.svg'

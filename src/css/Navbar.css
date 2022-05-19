@@ -65,9 +65,9 @@
   align-items: center;
 }
 
-.navbar .logo-zone:hover .name {
+/* .navbar .logo-zone:hover .name {
   color: var(--primary);
-}
+} */
 
 .navbar .logo-zone .texto {
   display: flex;
