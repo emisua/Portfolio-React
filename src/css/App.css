@@ -21,13 +21,6 @@ p {
   line-height: 1.5rem;
 }
 
-.container {
-  max-width: 70rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-  width: 100%;
-}
-
 .bloque {
   display: flex;
   flex-direction: column;
@@ -74,10 +67,6 @@ p {
 
 .p1 {
   padding: 1rem;
-}
-
-.flex {
-  display: flex;
 }
 
 .flex.column {
