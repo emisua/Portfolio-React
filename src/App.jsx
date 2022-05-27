@@ -5,6 +5,7 @@ import Home from '../componentes/paginas/PaginaHome'
 import Proyectos from '../componentes/paginas/PaginaProyectos'
 import SobreMi from '../componentes/paginas/PaginaSobreMi'
 import Contacto from '../componentes/paginas/PaginaContacto'
+import Footer from '../componentes/Footer'
 import { useState, useEffect, useCallback } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
@@ -44,6 +45,7 @@ function App () {
         <Route path='/proyectos' element={<Proyectos isMobile={isMobile} />} />
         <Route path='/contacto' element={<Contacto isMobile={isMobile} />} />
       </Routes>
+      <Footer />
     </main>
   )
 }

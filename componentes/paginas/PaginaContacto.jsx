@@ -1,30 +1,8 @@
 import Title from '../Title'
 import Header from '../Header'
-// import Input from '../Input'
 import '../../src/css/Contacto.css'
-import Footer from '../Footer'
-// import images from '../../src/assests/images'
 
 const Contacto = ({ isMobile }) => {
-  // const inputNombre = {
-  //   type: 'text',
-  //   label: 'Nombre',
-  //   placeHolder: 'Nombre',
-  //   name: 'nombre'
-  // }
-  // const inputMensaje = {
-  //   type: 'text',
-  //   label: 'Mensaje',
-  //   placeHolder: 'Escribe tu mensaje',
-  //   name: 'mensaje'
-  // }
-  // const inputEmail = {
-  //   type: 'email',
-  //   label: 'Email',
-  //   placeHolder: 'email@email.com',
-  //   name: 'email'
-  // }
-
   return (
     <section className='contacto'>
       <Header
@@ -33,40 +11,15 @@ const Contacto = ({ isMobile }) => {
         isMobile={isMobile}
       >
         <div className='container'>
-          <Title size='3' title='<Contacto/>' />
+          <Title size='3' title='<Contacto/>' className='bg-transparent md:text-secondary-darker md:bg-white text-secondary-darker dark:text-secondary-light dark:md:bg-darkest inline-flex rounded-2xl md:py-8 md:px-4 p-0 mt-8 mx-0 mb-12 md:mb-8 text-4xl lg:text-5xl' />
         </div>
       </Header>
-      {/* <div className='container'>
-        <div className='content code'>
-          <form className='form'>
-            <div className='nombre'>
-              <Input
-                {...inputNombre}
-              />
-
-            </div>
-            <div className='email'>
-              <Input
-                {...inputEmail}
-              />
-            </div>
-            <div className='mensaje'>
-              <label htmlFor='textarea'>Mensaje</label>
-              <textarea name='textarea' id='' cols='30' rows='5' placeholder='Escribe tu mensaje' />
-            </div>
-            <button className='enviar'>
-              Enviar
-            </button>
-          </form>
-        </div>
-      </div> */}
-      <main className='container pb4'>
-        <div className='content code'>
-          <h2 className='color-secondary'>Envíame un email</h2>
-          <h4><a className='bebas color-primary' href='mailto:hola@emisua.dev'>hola@emisua.dev</a></h4>
+      <main className='w-container md:w-full container bg-white dark:bg-secondary-darker rounded-2xl py-8 relative'>
+        <div className='content font-fira-code'>
+          <h2 className='text-secondary text-2xl'>Envíame un email</h2>
+          <h4><a className='font-bebas text-primary' href='mailto:hola@emisua.dev'>hola@emisua.dev</a></h4>
         </div>
       </main>
-      <Footer />
     </section>
   )
 }

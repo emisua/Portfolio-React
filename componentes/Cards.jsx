@@ -26,8 +26,8 @@ const Cards = () => {
  */
   // console.log(images)
 
-  return proyectos.map((proyecto, index) => (
-    <div className='card' key={index}>
+  return proyectos.reverse().map((proyecto, index) => (
+    <div className='card aspect-square lg:aspect-[5 / 6]' key={index}>
       <a href={proyecto.url} target='_blank' rel='noopener noreferrer'>
         <div className='img'>
           <img src={proyecto.img.poster} alt={proyecto.title} />

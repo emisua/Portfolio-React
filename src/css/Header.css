@@ -6,15 +6,14 @@
   background-size: cover;
 }
 
-.header .title{
+/* .header .title{
   padding: 0;
   border-radius: 1rem;
   font-size: clamp(2rem, 5vw, 4rem);
   margin: 2rem 0 3rem;
   line-height: clamp(1.5rem, 4.6vw, 4rem);
   display: inline-flex;
-  
-}
+} */
 
 /* DESKTOP */
 
@@ -30,7 +29,7 @@
   z-index: 0;
 }
 
-.desktop .header .title{
+/* .desktop .header .title{
   background-color: var(--white);
   padding: 2rem 1rem;
   border-radius: 1rem;
@@ -38,4 +37,4 @@
   margin-bottom: 2rem;
   line-height: clamp(1.5rem, 2.5vw, 4rem);
   display: inline-flex;
-}
+} */

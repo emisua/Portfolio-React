@@ -26,11 +26,11 @@
   width: 56px;
 }
 
-.sobremi .grid-sobremi {
+/* .sobremi .grid-sobremi {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
-}
+} */
 
 /* DESKTOP */
 
@@ -46,8 +46,7 @@
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 60px), 1fr));
 }
 
-.desktop .sobremi .content{
-  background-color: var(--white);
+/* .desktop .sobremi .content{
   position: relative;
   padding: 2rem;
   border-radius: 1rem;
@@ -57,4 +56,4 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-}
+} */

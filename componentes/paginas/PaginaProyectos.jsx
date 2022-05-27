@@ -8,23 +8,22 @@ import Footer from '../Footer'
 const Proyectos = ({ isMobile }) => {
   return (
     <>
-      <main className='proyectos pb4'>
+      <main className='proyectos pb-24'>
         <Header
           className='overlay-dark color-black code'
           imgUrl='./assets/img/bg-proyectos.jpg'
           isMobile={isMobile}
         >
           <div className='container'>
-            <Title size='3' title='<Proyectos/>' />
+            <Title size='3' title='<Proyectos/>' className='bg-transparent md:text-secondary-darker md:bg-white text-secondary-darker dark:text-secondary-light dark:md:bg-darkest inline-flex rounded-2xl md:py-8 md:px-4 p-0 mt-8 mx-0 mb-12 md:mb-8 text-4xl lg:text-5xl' />
           </div>
         </Header>
-        <section className='container mb3'>
-          <div className='card-block'>
+        <section className='w-container md:w-full container bg-white dark:bg-secondary-darker rounded-2xl py-4 relative'>
+          <div className='card-block bg-white dark:bg-secondary-darker'>
             <Cards />
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }
