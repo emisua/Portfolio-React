@@ -1,6 +1,6 @@
 const Text = ({ children, className = '', color }) => {
   return (
-    <p className={className} style={{ color: `${color}` }}>
+    <p className={`mb-3 leading-6 ${className}`}>
       {children}
     </p>
   )

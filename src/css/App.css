@@ -1,36 +1,36 @@
-* {
+/* * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+} */
 
-body{
+/* body{
   min-height: 100vh;
   position: relative;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   color: initial;
   cursor: pointer;
-}
+} */
 
-p {
+/* p {
   margin-bottom: 0.7rem;
   font-size: 1rem;
   line-height: 1.5rem;
-}
+} */
 
-.bloque {
+/* .bloque {
   display: flex;
   flex-direction: column;
   min-height: 70vh;
   justify-content: center;
-}
+} */
 
 /* FUENTES */
 
-.code {
+/* .code {
   font-family: 'Fira Code', sans-serif;
 }
 
@@ -40,9 +40,9 @@ p {
 
 .strong {
   font-weight: bold;
-}
+} */
 
-.display {
+/* .display {
   font-size: clamp(5rem, 10vw, 7rem);
   margin: 0;
   line-height: clamp(5rem, 10vw, 6.4rem);
@@ -61,11 +61,11 @@ p {
   border-radius: 5px;
   left: -4%;
   filter: contrast(1.2);
-}
+} */
 
 /* GRID */
 
-.p1 {
+/* .p1 {
   padding: 1rem;
 }
 
@@ -74,11 +74,11 @@ p {
 }
 .pb4{
   padding-bottom: 4rem;
-}
+} */
 
 /* STYLE */
 
-.desktop .overlay-dark:before{
+/* .desktop .overlay-dark:before{
   position: absolute !important;
   content: "" !important;
   top: 0;
@@ -107,4 +107,4 @@ p {
 .featured{
   padding: 0.05rem 0.3rem;
   border-radius: 5px;
-}
+} */

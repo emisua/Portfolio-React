@@ -16,9 +16,9 @@ const Home = () => {
         <div className='spacer' />
         <div className='texto flex order-1 flex-col items-start md:bg-transparent md:p-4 md:rounded-2xl md:backdrop-blur-sm'>
           <Title size='1' className='font-bebas relative mb-4 hidden md:block'>
-            <span className='dark:text-white color-secondary-darker text-homeh1 leading-homeh1 font-normal'>EMILIO SUÁREZ</span>
+            <span className='dark:text-white text-secondary-darker text-homeh1 leading-homeh1 font-normal'>EMILIO SUÁREZ</span>
             <br />
-            <span className='color-primary text-homeh2 leading-homeh2 font-normal'>Frontend developer</span>
+            <span className='text-primary text-homeh2 leading-homeh2 font-normal'>Frontend developer</span>
           </Title>
           <div className='text font-fira-code dark:text-secondary-light '>
             <Text>
@@ -31,7 +31,7 @@ const Home = () => {
               En un futuro me gustaría aprender otros frameworks como <i>Vue</i> o <i>Angular</i>. Soy autodidacta y aprendo algo nuevo cada día.
             </Text>
           </div>
-          <Btn className='font-fira-code dark:text-white bg-transparent transition-all duration-100 ease-in-out px-3 py-2 border border-secondary-darker hover:bg-primary-light hover:border-primary-light dark:hover:text-darkest dark:border-secondary-light  dark:hover:border-primary-light rounded-md text-sm' to='/proyectos' color='red'>
+          <Btn className='px-3 py-2 border border-secondary-darker hover:bg-primary-light hover:border-primary-light dark:hover:text-darkest dark:border-secondary-light  dark:hover:border-primary-light rounded-md text-sm' to='/proyectos' color='red'>
             Ver proyectos
           </Btn>
         </div>

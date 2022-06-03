@@ -33,19 +33,9 @@
   list-style: none;
 } */
 
-.navbar.dropdown.open ul {
-  opacity: 1;
-  bottom: 9rem;
-  
-}
-
 .navbar.dropdown.closed ul {
   opacity: 0 !important;
   pointer-events: none;
-  top: auto;
-  bottom: 9rem;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: opacity 0.4s ease-in-out;
 } 
 
 /* .navbar .avatar {

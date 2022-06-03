@@ -16,6 +16,10 @@ module.exports = {
         homeh1: 'clamp(5rem, 10vw, 7rem)',
         homeh2: 'clamp(1.5rem, 2.5vw, 4rem)'
       },
+      gridTemplateColumns: {
+        projects: 'repeat(auto-fit, minmax(min(100%, 210px), 1fr))',
+        tecno: 'repeat(auto-fill, minmax(min(100%, 64px), 1fr))'
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
@@ -59,7 +63,8 @@ module.exports = {
       bebas: ['Bebas Neue', 'cursive']
     },
     minHeight: {
-      home: 'calc(100vh - 5rem)'
+      home: 'calc(100vh - 5rem)',
+      full: '100%'
     },
     container: {
       padding: '1rem',

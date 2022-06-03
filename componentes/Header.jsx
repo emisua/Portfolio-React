@@ -1,4 +1,4 @@
-import '../src/css/Header.css'
+// import '../src/css/Header.css'
 
 const Header = ({ children, imgUrl, isMobile, className = '' }) => {
   return (
