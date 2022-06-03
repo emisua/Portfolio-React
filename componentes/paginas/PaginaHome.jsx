@@ -21,13 +21,13 @@ const Home = () => {
             <span className='text-primary text-homeh2 leading-homeh2 font-normal'>Frontend developer</span>
           </Title>
           <div className='text font-fira-code dark:text-secondary-light '>
-            <Text>
+            <Text className='mb-5'>
               Soy un <strong>apasionado de la tecnología.</strong> Desde que descubrí el diseño y desarrollo web, no he parado de indagar en ello.
             </Text>
-            <Text>
+            <Text className='mb-5'>
               Actualmente estoy centrado en <strong>aprender, mejorar, y especializarme en <Badge className='bg-js italic'>JavaScript</Badge></strong>. Esto lo acompaño con la librería <strong><Badge className='bg-react italic'>React</Badge></strong>, con el que está hecho este portfolio.
             </Text>
-            <Text>
+            <Text className='mb-5'>
               En un futuro me gustaría aprender otros frameworks como <i>Vue</i> o <i>Angular</i>. Soy autodidacta y aprendo algo nuevo cada día.
             </Text>
           </div>

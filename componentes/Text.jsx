@@ -1,6 +1,6 @@
 const Text = ({ children, className = '', color }) => {
   return (
-    <p className={`leading-5 ${className}`}>
+    <p className={`leading-6 ${className}`}>
       {children}
     </p>
   )
