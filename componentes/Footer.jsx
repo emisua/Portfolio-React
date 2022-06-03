@@ -1,4 +1,3 @@
-// import '../src/css/Footer.css'
 import Text from './Text'
 
 const Footer = ({ className = '' }) => {
