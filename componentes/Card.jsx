@@ -18,7 +18,7 @@ const Card = ({ className, linkUrl, img, imgAlt, tags, title, desc }) => {
             {tags}
           </div>
           <h4 className='my-2 self-start font-bold group-hover:text-black text-2xl order-2'>{title}</h4>
-          <Text className='hidden opacity-80 mt-auto font-fira-code md:flex md:mt-auto md:order-3 group-hover:text-black group-hover:opacity-100 text-sm'>{desc}</Text>
+          <Text className='hidden opacity-100 drop-shadow-md mt-auto font-fira-code md:flex md:mt-auto md:order-3 group-hover:text-black group-hover:opacity-100 text-sm'>{desc}</Text>
         </div>
       </a>
     </div>
